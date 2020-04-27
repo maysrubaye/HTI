@@ -126,7 +126,7 @@ export default registerBlockType( 'ect/shortcode', {
 			{label: 'Style 3', value: 'style-3'}		
 		];
 		const dateFormatsOptions = [
-			{label:"Default (01 January 2019)",value:"default"},
+			{label:"Default (Monday, Jan 01)",value:"default"},
 			{label:"Md,Y (Jan 01, 2019)",value:"MD,Y"},
 			{label:"Fd,Y (January 01, 2019)",value:"FD,Y"},
 			{label:"dM (01 Jan)",value:"DM"},

@@ -3,7 +3,8 @@ Theme Name: HTI
 */
 
 body {
-	font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 	margin: 0;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif!important;
+    line-height: normal!important;
 }
 
 .home-img {
@@ -26,9 +27,21 @@ body {
     list-style-type: none;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding-top: 15px;
     padding-bottom: 15px;
+    /*margin-bottom: -0.7%;*/
+}
+
+/*************** NAV ***************/
+.navbar {
+    padding: 0!important;
+}
+
+.site-nav li:hover > .sub-menu,
+.site-nav li:focus > .sub-menu {
+    display: grid;
+    box-shadow: 0px 3px 10px rgba(000,000,000,0.5);
 }
 
 .site-nav ul {
@@ -37,19 +50,32 @@ body {
 }
 
 .site-nav ul li {
-	float: right;
+    float: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .site-nav ul li a {
-	color: white;
-	font-size: 21px;
-	font-weight: 500;
-	text-align: center;
-	padding: 19px 40px;
-	text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    padding-bottom: 15px;
+    padding-left: 13px;
+    padding-right: 13px;
 }
 
-.site-nav ul li a:hover {
+/* to be uncommented later for selected nav items*/
+/*a {
+    pointer-events: none; 
+    cursor: default;
+
+}*/
+
+.site-nav ul li:hover > a,
+.site-nav ul li:focus > a {
 	background-color: white;
 	color: #015039;
 }
@@ -65,6 +91,27 @@ body {
 	background-color: #000;
 }
 
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #005039;
+    z-index: 999;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.sub-menu li:hover > .sub-menu, 
+.sub-menu li:focus > .sub-menu{
+    display: inline-grid;
+}
+
+/*************** END NAV ***************/
 
 .sec-header {
 	background-color: #cdcb99;
@@ -103,11 +150,6 @@ body {
     font-weight: 100;
 }
 
-
-.feature {
-	margin-top: 5%;
-}
-
 .feature > .wider-container > .container > h2 {
 	text-align: center;
     margin-right: 25%;
@@ -122,27 +164,8 @@ body {
     justify-content: center;
 }
 
-.sub-menu {
-	display: none;
-    position: absolute;
-    background-color: #005039;
-    z-index: 999;
-    padding: 1%;
-    margin-top: 1%;
-}
-
-ul li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  margin-top: 1%;
-}
-
-.sub-menu > .menu-item > .sub-menu {
-	padding: 4%;
-    margin-top: 4%;
+.the_content {
+    margin-top: 2%;
 }
 
 /* Search */
@@ -181,10 +204,8 @@ div.hd-search #s {
 }
 
 .ect-event-url {
-	font-size: 23px!important;
+	/*font-size: 23px!important;*/
     text-decoration: underline;
-    font-family: "Monda";
-    color: #00445e;
     font-weight: bold;
     font-style: normal;
 }
@@ -192,23 +213,24 @@ div.hd-search #s {
 .ect-date-area {
 	font-size: 25px;
     font-weight: bold;
+    color: #015039;
 }
 
 .ect-event-content {
 	margin-top: -2%!important;
 }
 
-/*.light-green {
-	background-color: #CDCB9A;
-	width: 100%;
+.ect-event-content p {
+	color: #015039;
 }
-*/
+
+
 .wider-container:nth-child(even) {
 	background-color: #cdcb99;
 }
 
 #ect-events-list-content .ect-list-description .ect-event-content a {
-    color: #006991;
+    color: #015039;
     display: inline-block;
     margin: 10px 0 5px;
     font-weight: 700;
@@ -223,13 +245,11 @@ div.hd-search #s {
     background-position: 50%;
     min-height: 430px;
     height: 50%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     width: 100vw;
-    position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
@@ -237,28 +257,33 @@ div.hd-search #s {
 }
 
 
+.container > h2 > a {
+	display: none;
+}
 
 
+.wp-block-cover .wp-block-cover__inner-container {
+    width: calc(100% - 20%);
+    z-index: 1;
+    color: #f8f9f9;
+}
 
 
+#ect-events-list-content .ect-list-description .ect-event-content a {
+    color: #02825d;
+    display: none;
+}
 
 
+.wp-block-columns {
+    margin-bottom: 0;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+p:empty{
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
 
 

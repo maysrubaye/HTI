@@ -36,19 +36,6 @@
 
 		</div>
 
-				<div class="row">
-			<div class="col-md-4">
-				<p>
-					Privacy Policy
-				</p>
-			</div>
-			<div class="col-md-4">
-				<p>
-					501c Non-Profit Organization
-				</p>
-			</div>
-
-		</div>
 	</div>
 	<p><?php bloginfo('name');?> - &copy <?php echo date('Y');?></p>
 </footer>

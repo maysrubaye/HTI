@@ -28,7 +28,7 @@ if (!class_exists('EctVCAddon')) {
                 }
                $date_formats= array(
                    
-					  __( 'Default (01 January 2019)', 'ect2' )=>'default',
+					  __( 'Default (Monday, Jan 01)', 'ect2' )=>'default',
                       __( 'Md,Y (Jan 01, 2019)', 'ect2' )=>'MD,Y',
                      __( 'Fd,Y (January 01, 2019)', 'ect2' )=>'FD,Y',
                     __( 'dM (01 Jan))', 'ect2' )=> 'DM',
@@ -44,7 +44,6 @@ if (!class_exists('EctVCAddon')) {
                     __( 'Mdl (Jan 01 Monday)', 'ect2' )=>'Mdl',
                     __( 'd.Ml (01. Jan Monday)', 'ect2' )=>'d.Ml',
                     __( 'dFT (01 January 8:00am-5:00pm)', 'ect2' )=>  'dFT',
-                 
                     );
                     $templates=  array(
                                 __( "Default",'ect2' ) => "default",

@@ -591,7 +591,7 @@ function ect_Options() {
 
 					<tr><td>date_format</td>
 					<td><ul>
-					<li><strong>default</strong> (01 January 2019)</li>
+					<li><strong>default</strong> (Monday, Jan 01) (NOTE: this is custom for HTI)</li>
 					<li><strong>MD,Y</strong> (Jan 01, 2019)</li>
 					<li><strong>MD,Y</strong> (January 01, 2019)</li>
 					<li><strong>DM</strong> (01 Jan)</li>

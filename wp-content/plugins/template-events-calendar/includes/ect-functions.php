@@ -105,9 +105,12 @@ function ect_custom_date_formats($date_format,$template,$event_id,$ev_time){
                         ';
                 }
 				else {
-					$event_schedule='<span class="ev-day">'.$ev_day.'</span>
-					<span class="ev-mo">'.$ev_full_month.'</span>
-					<span class="ev-yr">'.$ev_year.'</span>';
+					/* This default was customized for HTI by Mays Rubaye 4/17/20*/
+					$event_schedule='
+                		<span class="ev-day">'.tribe_get_start_date($event_id, false, 'l' ).'</span>, 
+                		<span class="ev-day">'.$ev_full_month.'</span>
+                        <span class="ev-mo">'.$ev_day.'</span>
+                        ';
 				}
 				 $set_template = esc_attr($template);
                 $output.='<div class="ect-date-area '.$set_template.'-schedule">';

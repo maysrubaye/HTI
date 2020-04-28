@@ -164,9 +164,9 @@ ul li ul:hover {
     justify-content: center;
 }
 
-.the_content {
-    margin-top: 2%;
-}
+/*.the_content {
+    padding-top: 2%;
+}*/
 
 /* Search */
 div.hd-search {
@@ -279,8 +279,13 @@ div.hd-search #s {
     margin-bottom: 0;
 }
 
+.wp-block-button__link {
+    background-color: #01503A;
+    border-radius: 0;
+}
 
 p:empty{
+    display: none;
   height: 0;
   margin: 0;
   padding: 0;

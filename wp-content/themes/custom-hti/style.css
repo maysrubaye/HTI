@@ -265,7 +265,7 @@ div.hd-search #s {
 .wp-block-cover .wp-block-cover__inner-container {
     width: calc(100% - 20%);
     z-index: 1;
-    color: #f8f9f9;
+    color: #000000;
 }
 
 

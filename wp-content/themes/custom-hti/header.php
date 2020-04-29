@@ -22,7 +22,7 @@
                     
         <!-- /header-search -->
 		
-		<nav id="main-navvv" class="site-nav navbar navbar-default" role="navigation">
+		<nav class="site-nav navbar navbar-default" role="navigation">
 			<form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
     <div><label class="screen-reader-text" for="s">Search for:</label>
         <input type="text" value="" name="s" id="s" placeholder="<?php the_search_query(); ?>" />
@@ -36,24 +36,34 @@
 			?>
 			<?php wp_nav_menu( $args ); ?>
 		</nav>
-		<?php if ( is_front_page() ) : 
-			$posttitle = 'banner';
-			$postid = $wpdb->get_var( "SELECT ID FROM $wpdb->posts WHERE post_title = '" . $posttitle . "'" );
-			$post = get_post($postid); //assuming $id has been initialized
-			
-			setup_postdata($post);
-			the_content();
-		endif;
 
+<?php 
+		$args = array(
+        	'post_type' => 'post'
+    	);
 
-			$posttitle = 'header';
-			$postid = $wpdb->get_var( "SELECT ID FROM $wpdb->posts WHERE post_title = '" . $posttitle . "'" );
-			$post = get_post($postid); //assuming $id has been initialized
-			
-			setup_postdata($post);
-			// display the post
-			the_content();
-		?>
+    	$post_query = new WP_Query($args);
+
+	    if($post_query->have_posts() ) {
+	        while($post_query->have_posts() ) {
+	            $post_query->the_post();
+
+	            if ( is_front_page() ) :
+	            	if ((get_the_title() == "banner")) : 
+						the_content();
+					endif; 
+            		if ((get_the_title() == "header")) : 
+						the_content();
+					endif;
+				else:
+					if ((get_the_title() == "header")) : 
+						the_content();
+					endif;
+				endif; 
+	        }
+        }
+
+?>
 	</header>
 
 </body>

@@ -35,7 +35,10 @@ body {
 
 /*************** NAV ***************/
 .navbar {
+    justify-content: flex-end!important;
     padding: 0!important;
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
 }
 
 .site-nav li:hover > .sub-menu, 
@@ -107,7 +110,6 @@ ul li ul:hover {
 }
 
 /*************** END NAV ***************/
-
 .sec-header {
 	background-color: #cdcb99;
     padding: 2%;
@@ -163,7 +165,10 @@ ul li ul:hover {
     padding-top: 2%;
 }*/
 
-/* Search */
+
+
+
+/*************** SEARCH ***************/
 div.hd-search {
     margin-right: 8rem;
     position: absolute;
@@ -193,7 +198,43 @@ div.hd-search #s {
     border: none;
 }
 
+input[type=text] {
+    display: flex;
+    width: 130px;
+    font-size: 0.9rem;
+    background: #ededed 
+                url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png)
+                no-repeat 
+                5px 
+                center;
+    padding: 10px 5px 10px 28px;
+    -webkit-transition: width 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: width 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);;
+    border: white;
+    justify-content: center;
+}
 
+input::placeholder {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text]:focus {
+  width: 105%;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(255,255,255,.4);
+  outline: none!important;
+}
+
+input[type=text]:focus > .navbar {
+    padding-right: 3rem!important;
+}
+/*************** END SEARCH ***************/
+
+
+
+/*************** UPCOMING EVENT ***************/
 .custom-event {
 	padding-bottom: 5%;
 }
@@ -232,8 +273,7 @@ div.hd-search #s {
     text-decoration: none;
     box-shadow: none;
 }
-
-
+/*************** END UPCOMING EVENT ***************/
 .wp-block-cover, .wp-block-cover-image {
     position: relative;
     background-size: cover;
@@ -281,9 +321,38 @@ div.hd-search #s {
 
 p:empty{
     display: none;
-  height: 0;
-  margin: 0;
-  padding: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

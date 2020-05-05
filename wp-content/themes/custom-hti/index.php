@@ -8,7 +8,7 @@ get_header();
 if (have_posts()):
 	while(have_posts()) : the_post();?>
 		<?php 
-		if ((get_the_title() != "header" && get_the_title() != "banner")) : 
+		if ((get_the_title() != "header" && get_the_title() != "banner" && get_the_title() != "footer")) : 
 			?>
 		<div class="wider-container">
 			<div class="container">

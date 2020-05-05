@@ -93,9 +93,8 @@ else{
 // 	$events_html.='<a href="'.esc_url( tribe_get_event_link($event_id)).'" alt="'.esc_attr(get_the_title($event_id)).'" rel="bookmark">';
 	$events_html .='<div class="">'.$event_schedule.'</div></a>';
 	$events_html.='</div></div><!-- left-post close -->';
-// 	$events_html.='<div class="ect-list-post-right">
-	$events_html.='<div class="deets-bottom">
-				<div class="ect-list-post-right-table">';
+// 	$events_html.='<div class="ect-list-post-right">';
+	$events_html.='<div class="deets-bottom"><div class="ect-list-post-right-table">';
 
 			
 	if (tribe_has_venue($event_id)) {

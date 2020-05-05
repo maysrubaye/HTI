@@ -11,6 +11,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
+
 // Setup an array of venue details for use later in the template
 $venue_details = tribe_get_venue_details();
 

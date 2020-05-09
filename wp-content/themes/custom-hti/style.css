@@ -297,9 +297,9 @@ input[type=text]:focus > .navbar {
 }
 
 
-.container > h2 > a {
+/*.container > h2 > a {
 	display: none;
-}
+}*/
 
 
 .wp-block-cover .wp-block-cover__inner-container {

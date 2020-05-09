@@ -1,4 +1,7 @@
 <?php 
+/**
+* Template Name: Generic Page Template
+*/
 get_header(); 
 ?>
 <?php

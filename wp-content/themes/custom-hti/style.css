@@ -13,20 +13,6 @@ body {
     line-height: normal!important;
 }
 
-.home-img {
-    width: 100%;
-    background-image: url(home-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.overlay {
-    background-color: #CDCB9A;
-    opacity: 0.39;
-    height: 200px;
-    width: 100%;
-}
-
 .site-nav {
 	background-color: #015039;
     color: white;
@@ -36,10 +22,9 @@ body {
     justify-content: flex-end;
     padding-top: 15px;
     padding-bottom: 15px;
-    /*margin-bottom: -0.7%;*/
 }
 
-/*************** NAV ***************/
+/*************** MAIN NAV ***************/
 .navbar {
     justify-content: flex-end!important;
     padding: 0!important;
@@ -114,62 +99,7 @@ ul li ul:hover {
 .sub-menu li:focus > .sub-menu{
     display: inline-grid;
 }
-
 /*************** END NAV ***************/
-.sec-header {
-	background-color: #cdcb99;
-    padding: 2%;
-    color: #707070;
-}
-
-.sec-header h2 {
-	font-size: 50px;
-}
-
-.sec-header p {
-	font-size: 25px;
-}
-
-
-.site-footer {
-	background-color: #015039;
-	color: white;
-}
-
-.fa-2x {
-    font-size: 2.5em;
-    padding: 2%;
-}
-
-.fa-1x {
-    font-size: 1.4em;
-    margin-top: 2%;
-}
-
-.fa-1x > span{
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
-    font-size: 0.8em;
-    font-weight: 100;
-}
-
-.feature > .wider-container > .container > h2 {
-	text-align: center;
-    margin-right: 25%;
-    margin-bottom: 2%;
-    padding-top: 2%;
-}
-
-.feature > .wider-container > .container > h2 > a{
-	color: #015039;
-    text-decoration: underline;
-    font-size: 45px;
-    justify-content: center;
-}
-
-/*.the_content {
-    padding-top: 2%;
-}*/
-
 
 
 
@@ -180,7 +110,6 @@ div.hd-search {
     margin-left: 54rem;
     margin-top: -5rem;
 }
-
 
 div.hd-search label {
 	position: absolute;
@@ -240,12 +169,12 @@ input[type=text]:focus > .navbar {
 
 
 /*************** UPCOMING EVENT ***************/
+/* This is a customization for the Events Calendar Shortcode and Templates Addon Plugin */
 .custom-event {
 	padding-bottom: 5%;
 }
 
 .ect-event-url {
-	/*font-size: 23px!important;*/
     text-decoration: underline;
     font-weight: bold;
     font-style: normal;
@@ -257,17 +186,8 @@ input[type=text]:focus > .navbar {
     color: #015039;
 }
 
-.ect-event-content {
-	margin-top: -2%!important;
-}
-
 .ect-event-content p {
 	color: #015039;
-}
-
-
-.wider-container:nth-child(even) {
-	background-color: #cdcb99;
 }
 
 #ect-events-list-content .ect-list-description .ect-event-content a {
@@ -279,6 +199,7 @@ input[type=text]:focus > .navbar {
     box-shadow: none;
 }
 /*************** END UPCOMING EVENT ***************/
+
 .wp-block-cover, .wp-block-cover-image {
     position: relative;
     background-size: cover;
@@ -289,18 +210,12 @@ input[type=text]:focus > .navbar {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-/*    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;*/
 }
 
 
-/*.container > h2 > a {
-	display: none;
-}*/
-
+.cal {
+    border-right: 2px solid rgba(0,0,0,0.3);
+}
 
 .wp-block-cover .wp-block-cover__inner-container {
     width: calc(100% - 20%);
